@@ -1,8 +1,17 @@
-import numpy as np
+# BioPulse AI
 
-# Simulación de datos biomédicos (ej: ritmo cardíaco)
-data = np.random.normal(75, 5, 100)
+Proyecto de monitoreo de signos vitales con inteligencia artificial.
 
-print("Promedio:", np.mean(data))
-print("Máximo:", np.max(data))
-print("Mínimo:", np.min(data))
+## Descripción
+BioPulse AI es un sistema que lee el pulso y oxigenación de la sangre usando sensores y detecta anomalías mediante un modelo de Machine Learning.
+
+## Archivos
+- `hardware/arduino_code.ino` → Código Arduino para leer el pulso
+- `src/ml_model.py` → Modelo de ML para clasificar las condiciones
+- `src/dashboard.py` → Dashboard interactivo con Streamlit
+- `data/sample_pulse_data.csv` → Datos de ejemplo
+- `requirements.txt` → Librerías necesarias
+
+## Cómo usar
+1. Conecta el sensor de pulso al Arduino y sube `arduino_code.ino`.
+2. Instala las librerías de Python:
